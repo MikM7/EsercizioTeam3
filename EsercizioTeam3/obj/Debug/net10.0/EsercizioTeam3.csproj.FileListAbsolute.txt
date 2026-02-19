@@ -1,0 +1,15 @@
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\bin\Debug\net10.0\EsercizioTeam3.exe
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\bin\Debug\net10.0\EsercizioTeam3.deps.json
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\bin\Debug\net10.0\EsercizioTeam3.runtimeconfig.json
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\bin\Debug\net10.0\EsercizioTeam3.dll
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\bin\Debug\net10.0\EsercizioTeam3.pdb
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.AssemblyInfoInputs.cache
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.AssemblyInfo.cs
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.csproj.CoreCompileInputs.cache
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.sourcelink.json
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.dll
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\refint\EsercizioTeam3.dll
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.pdb
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\EsercizioTeam3.genruntimeconfig.cache
+C:\Users\decic\Documents\GitHub\EsercizioTeam3\EsercizioTeam3\obj\Debug\net10.0\ref\EsercizioTeam3.dll
