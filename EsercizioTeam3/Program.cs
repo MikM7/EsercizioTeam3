@@ -10,7 +10,10 @@ class Esercizio
 
         while (continua)
         {
-            StampaMenu();
+            string[] gusti = { "Cioccolato", "Vaniglia", "Fragola", "Pistacchio", "Limone"};
+            double[] prezzi = { 2, 3, 4, 5, 2};
+
+            StampaMenu(gusti, prezzi);
 
             int scelta;
             Console.Write("Inserisci il numero del gusto (1-5): ");
@@ -28,20 +31,37 @@ class Esercizio
             }
 
             string nomeGusto = "";
-            double prezzoPalla = 1.50;
+            double prezzoPalla = 0;
 
             switch (scelta)
             {
-                case 1: nomeGusto = "Cioccolato"; break;
-                case 2: nomeGusto = "Vaniglia"; break;
-                case 3: nomeGusto = "Fragola"; break;
-                case 4: nomeGusto = "Pistacchio"; break;
-                case 5: nomeGusto = "Limone"; break;
+                case 1: 
+                    nomeGusto = gusti[scelta-1]; 
+                    prezzoPalla = prezzi[scelta-1];
+                    break;
+                case 2:
+                    nomeGusto = gusti[scelta-1]; 
+                    prezzoPalla = prezzi[scelta-1];
+                    break;
+                case 3:
+                    nomeGusto = gusti[scelta-1]; 
+                    prezzoPalla = prezzi[scelta-1];
+                    break;
+                case 4:
+                    nomeGusto = gusti[scelta-1]; 
+                    prezzoPalla = prezzi[scelta-1];
+                    break;
+                case 5:
+                    nomeGusto = gusti[scelta-1]; 
+                    prezzoPalla = prezzi[scelta-1];
+                    break;
             }
 
-            double costoParziale = prezzoPalla * quantita;
-            totale += costoParziale;
-            riepilogo += $"{quantita}x {nomeGusto} - {costoParziale:F2}€\n";
+            double costoParziale = CalcolaTotale(prezzoPalla, quantita);
+            if (costoParziale > 10){totale += (costoParziale * 0.9d);}
+            else{totale += costoParziale;}
+            
+            riepilogo += $"Palline: {quantita}x - Gusto: {nomeGusto} - Costo: {costoParziale:F2}€\n";
 
             Console.WriteLine($"Aggiunto: {quantita} palline di {nomeGusto}.");
             
@@ -58,7 +78,7 @@ class Esercizio
         Console.WriteLine($"TOTALE FINALE: {totale:F2}€");
         Console.WriteLine("Grazie e a presto!");
     }
-    public static void StampaMenu()
+    /*public static void StampaMenu()
     {
         Console.WriteLine("\n--- GUSTI DISPONIBILI ---");
         Console.WriteLine("1. Cioccolato");
@@ -67,14 +87,14 @@ class Esercizio
         Console.WriteLine("4. Pistacchio");
         Console.WriteLine("5. Limone");
         Console.WriteLine("-------------------------");
-    }
+    }*/
 
-    /*public static float CalcolaTotale(int prezzoGusto, int quantita)
+    public static double CalcolaTotale(double prezzoGusto, int quantita)
     {
-        float prezzoTotale = 0;
+        double prezzoTotale = 0;
 
         prezzoTotale = prezzoGusto * quantita;
-        return prezzoTotale;
+        return prezzoTotale;       
     }
 
     public static void StampaMenu(string[] gusti, double[] prezzi)
@@ -83,8 +103,8 @@ class Esercizio
         Console.WriteLine("--- GUSTI DISPONIBILI ---");
         for (int i = 0; i < gusti.Length; i++)
         {
-            Console.WriteLine(i + ") " + gusti[i] + " - " + prezzi[i] + " Euro");
+            Console.WriteLine(i+1 + ") " + gusti[i] + " - " + prezzi[i] + " Euro");
         }
         Console.WriteLine("-------------------------");
-    }*/
+    }
 }
