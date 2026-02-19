@@ -7,7 +7,7 @@ class Esercizio
         
     }
 
-    public static float CalcolaTotale(int prezzoGusto, int quantita)
+    /*public static float CalcolaTotale(int prezzoGusto, int quantita)
     {
         float prezzoTotale = 0;
 
@@ -24,5 +24,5 @@ class Esercizio
             Console.WriteLine(i + ") " + gusti[i] + " - " + prezzi[i] + " Euro");
         }
         Console.WriteLine("-------------------------");
-    }
+    }*/
 }
