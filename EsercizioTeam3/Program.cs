@@ -59,12 +59,7 @@ class Esercizio
             }
 
             float costoParziale = CalcolaTotale(prezzoPalla, quantita);
-            if (costoParziale > 10)
-            {
-                float sconto = costoParziale - (costoParziale * 0.9f);
-                //costoParziale += sconto;
-            }
-            else{totale += costoParziale;}
+            totale += costoParziale;
             
             riepilogo += $"Palline: {quantita}x - Gusto: {nomeGusto} - Costo: {costoParziale:F2}€\n";
 
@@ -81,8 +76,8 @@ class Esercizio
         Console.WriteLine(riepilogo);
         Console.WriteLine("------------------------");
 
-        if(totaleScontato > 0){Console.WriteLine($"TOTALE FINALE: {totaleScontato:F2}€ (SCONTATO)");}
-        else{Console.WriteLine($"TOTALE FINALE: {totale:F2}€");}
+        //if(totaleScontato > 0){Console.WriteLine($"TOTALE FINALE: {totaleScontato:F2}€ (SCONTATO)");}
+        Console.WriteLine($"TOTALE FINALE: {totale:F2}€");
         
         Console.WriteLine("Grazie e a presto!");
     }
@@ -92,6 +87,11 @@ class Esercizio
         float prezzoTotale = 0;
 
         prezzoTotale = prezzoGusto * quantita;
+
+        if(prezzoTotale > 10)
+        {
+            prezzoTotale *= 0.9f;
+        }
         return prezzoTotale;       
     }
 
