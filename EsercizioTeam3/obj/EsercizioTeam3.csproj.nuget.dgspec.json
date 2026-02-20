@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matte\\OneDrive\\Documenti\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj": {}
+    "C:\\Users\\decic\\Documents\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matte\\OneDrive\\Documenti\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj": {
+    "C:\\Users\\decic\\Documents\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matte\\OneDrive\\Documenti\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj",
+        "projectUniqueName": "C:\\Users\\decic\\Documents\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj",
         "projectName": "EsercizioTeam3",
-        "projectPath": "C:\\Users\\matte\\OneDrive\\Documenti\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj",
-        "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matte\\OneDrive\\Documenti\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\obj\\",
+        "projectPath": "C:\\Users\\decic\\Documents\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\EsercizioTeam3.csproj",
+        "packagesPath": "C:\\Users\\decic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\decic\\Documents\\GitHub\\EsercizioTeam3\\EsercizioTeam3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\decic\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
