@@ -4,7 +4,7 @@ class Esercizio
 {
     public static void Main(string[] args)
     {
-        float totale = 0, totaleScontato = 0;
+        float totale = 0;
         string riepilogo = "\n--- RIEPILOGO ORDINE ---\n";
         bool continua = true;
 
