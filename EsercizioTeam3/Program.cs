@@ -4,15 +4,20 @@ class Esercizio
 {
     public static void Main(string[] args)
     {
-        double totale = 0;
+        float totale = 0, totaleScontato = 0;
         string riepilogo = "\n--- RIEPILOGO ORDINE ---\n";
         bool continua = true;
 
+        string[] gusti = { "Cioccolato", "Vaniglia", "Fragola", "Pistacchio", "Limone"};
+        float[] prezzi = { 2, 3, 4, 5, 2};
+        
+        int quantita;
+        string nomeGusto = "";
+        float prezzoPalla = 0;
+
         while (continua)
         {
-            string[] gusti = { "Cioccolato", "Vaniglia", "Fragola", "Pistacchio", "Limone"};
-            double[] prezzi = { 2, 3, 4, 5, 2};
-
+            
             StampaMenu(gusti, prezzi);
 
             int scelta;
@@ -23,15 +28,11 @@ class Esercizio
                 Console.WriteLine("Errore! Inserisci un numero valido tra 1 e 5:");
             }
 
-            int quantita;
             Console.Write("Quante palline vuoi di questo gusto? ");
             while (!int.TryParse(Console.ReadLine(), out quantita) || quantita <= 0)
             {
                 Console.WriteLine("Inserisci un numero valido (maggiore di 0):");
             }
-
-            string nomeGusto = "";
-            double prezzoPalla = 0;
 
             switch (scelta)
             {
@@ -57,8 +58,12 @@ class Esercizio
                     break;
             }
 
-            double costoParziale = CalcolaTotale(prezzoPalla, quantita);
-            if (costoParziale > 10){totale += (costoParziale * 0.9d);}
+            float costoParziale = CalcolaTotale(prezzoPalla, quantita);
+            if (costoParziale > 10)
+            {
+                float sconto = costoParziale - (costoParziale * 0.9f);
+                //costoParziale += sconto;
+            }
             else{totale += costoParziale;}
             
             riepilogo += $"Palline: {quantita}x - Gusto: {nomeGusto} - Costo: {costoParziale:F2}€\n";
@@ -75,29 +80,22 @@ class Esercizio
     
         Console.WriteLine(riepilogo);
         Console.WriteLine("------------------------");
-        Console.WriteLine($"TOTALE FINALE: {totale:F2}€");
+
+        if(totaleScontato > 0){Console.WriteLine($"TOTALE FINALE: {totaleScontato:F2}€ (SCONTATO)");}
+        else{Console.WriteLine($"TOTALE FINALE: {totale:F2}€");}
+        
         Console.WriteLine("Grazie e a presto!");
     }
-    /*public static void StampaMenu()
-    {
-        Console.WriteLine("\n--- GUSTI DISPONIBILI ---");
-        Console.WriteLine("1. Cioccolato");
-        Console.WriteLine("2. Vaniglia");
-        Console.WriteLine("3. Fragola");
-        Console.WriteLine("4. Pistacchio");
-        Console.WriteLine("5. Limone");
-        Console.WriteLine("-------------------------");
-    }*/
 
-    public static double CalcolaTotale(double prezzoGusto, int quantita)
+    public static float CalcolaTotale(float prezzoGusto, int quantita)
     {
-        double prezzoTotale = 0;
+        float prezzoTotale = 0;
 
         prezzoTotale = prezzoGusto * quantita;
         return prezzoTotale;       
     }
 
-    public static void StampaMenu(string[] gusti, double[] prezzi)
+    public static void StampaMenu(string[] gusti, float[] prezzi)
     {
         Console.WriteLine("--- Gelateria 2026**TEAM3** di Marco.Matteo.Michele ---");
         Console.WriteLine("--- GUSTI DISPONIBILI ---");
